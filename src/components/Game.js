@@ -102,8 +102,8 @@ const Game = () => {
   if (N === null || M === null) {
     return (
       <div className="p-4 flex flex-col items-center gap-4">
-        <h1 className="text-3xl font-bold mb-2">Welcome to TicTacToe game</h1>
-        <h2 className="text-xl font-bold mb-2">
+        <h1 className="text-xl sm:text-3xl font-bold mb-2">Welcome to TicTacToe game</h1>
+        <h2 className="text-xl sm:text-2xl font-bold mb-2">
           Set Board Size and Win Length
         </h2>
         <form onSubmit={handleFormSubmit} className="space-y-4">
@@ -143,9 +143,9 @@ const Game = () => {
   }
 
   return (
-    <div className="flex flex-col items-center gap-10">
-      <h1 className="text-3xl font-bold mb-2">Welcome to TicTacToe game</h1>
-      <h1 className="text-2xl font-bold">
+    <div className="flex flex-col items-center gap-4 sm:gap-6">
+      <h1 className="text-xl sm:text-3xl font-bold mb-2">Welcome to TicTacToe game</h1>
+      <h1 className="text-xl sm:text-2xl font-bold">
         {winner
           ? winner === "Draw"
             ? "It's a draw"
